@@ -19,7 +19,7 @@ function App() {
     <React.Fragment>
       <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
       <main>
-        <Login onLogin={loginHandler} />
+        {!isLoggedIn && <Login onLogin={loginHandler} />}
         {isLoggedIn && <Home onLogout={logoutHandler} />}
       </main>
     </React.Fragment>
