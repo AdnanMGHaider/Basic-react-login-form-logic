@@ -5,51 +5,6 @@
   padding: 2rem;
 }
 
-.control {
-  margin: 1rem 0;
-  display: flex;
-  align-items: stretch; /*don't know what this does.*/
-  flex-direction: column;
-}
-
-.control label,
-.control input {
-  display: block; /*don't know what this does.*/
-}
-
-.control label {
-  font-weight: bold;
-  flex: 1; /*don't know what this does.*/
-  color: #464646;
-  margin-bottom: 0.5rem;
-}
-
-.control input {
-  flex: 3;
-  font: inherit;
-  padding: 0.35rem 0.35rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.control input:focus {
-  outline: none;
-  border-color: #0e182f;
-  background: #e0e6f6;
-}
-
-.control.invalid input {
-  border-color: red;
-  background: #fdbada;
-}
-
 .actions {
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .control {
-    align-items: center;
-    flex-direction: row;
-  }
 }
